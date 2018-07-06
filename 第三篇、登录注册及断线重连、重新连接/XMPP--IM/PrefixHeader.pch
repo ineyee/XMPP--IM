@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  XMPP--IM
+//
+//  Created by 意一yiyi on 2018/7/5.
+//  Copyright © 2018年 意一yiyi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MacroHeader.h"
+
+#import "ProjectHUD.h"
+#import "ProjectXMPP.h"
+
+#import "NSObject+Category.h"
+#import "NSUserDefaults+SaveComplexObject.h"
+
+#import "UserModel.h"
+
+#endif /* PrefixHeader_pch */
