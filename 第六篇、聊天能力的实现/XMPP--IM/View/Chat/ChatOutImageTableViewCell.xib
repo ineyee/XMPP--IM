@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="ChatOutImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-Ct-XaK">
+                        <rect key="frame" x="362" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7LO-42-OPf"/>
+                            <constraint firstAttribute="width" constant="40" id="9y4-kC-szQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xW-2c-9fY">
+                        <rect key="frame" x="290" y="14" width="62" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="79K-Ck-5Im"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXC-01-a9F">
+                        <rect key="frame" x="327" y="30" width="25" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Ppb-dM-3jY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egb-cz-wEo">
+                        <rect key="frame" x="192" y="54" width="160" height="146"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="YCy-cb-jSO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jxH-Ct-XaK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8R1-qP-cas"/>
+                    <constraint firstAttribute="trailing" secondItem="jxH-Ct-XaK" secondAttribute="trailing" constant="10" id="AXa-Kh-fqp"/>
+                    <constraint firstItem="egb-cz-wEo" firstAttribute="trailing" secondItem="UXC-01-a9F" secondAttribute="trailing" id="HoN-c5-8lO"/>
+                    <constraint firstItem="UXC-01-a9F" firstAttribute="centerY" secondItem="jxH-Ct-XaK" secondAttribute="centerY" constant="7" id="RVn-Vf-yLl"/>
+                    <constraint firstItem="jxH-Ct-XaK" firstAttribute="leading" secondItem="UXC-01-a9F" secondAttribute="trailing" constant="10" id="RgZ-r0-jcE"/>
+                    <constraint firstAttribute="bottom" secondItem="egb-cz-wEo" secondAttribute="bottom" constant="10" id="XcK-YF-f6u"/>
+                    <constraint firstItem="jxH-Ct-XaK" firstAttribute="leading" secondItem="6xW-2c-9fY" secondAttribute="trailing" constant="10" id="aSP-oz-5aI"/>
+                    <constraint firstItem="egb-cz-wEo" firstAttribute="top" secondItem="UXC-01-a9F" secondAttribute="bottom" constant="10" id="frB-wu-1lR"/>
+                    <constraint firstItem="6xW-2c-9fY" firstAttribute="centerY" secondItem="jxH-Ct-XaK" secondAttribute="centerY" constant="-8" id="jby-aC-N2B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentImageView" destination="egb-cz-wEo" id="eh0-wZ-GXH"/>
+                <outlet property="headImageView" destination="jxH-Ct-XaK" id="CAg-WW-olC"/>
+                <outlet property="nicknameLabel" destination="6xW-2c-9fY" id="VIp-Ld-nWB"/>
+                <outlet property="timeLabel" destination="UXC-01-a9F" id="Xpd-Wv-qwO"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="37"/>
+        </tableViewCell>
+    </objects>
+</document>
